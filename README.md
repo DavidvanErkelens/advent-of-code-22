@@ -9,3 +9,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 4. [PHP](04/php) (⭐⭐) / [C++](04/cpp) (⭐⭐)
 5. [C#](05) (⭐⭐)
 6. [TypeScript](06) (⭐⭐)
+7. [Go](07) (⭐⭐)
