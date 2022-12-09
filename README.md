@@ -4,9 +4,9 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 
 ## Language distribution
 1. [PHP](01) (⭐⭐)
-2. [PHP](02/php) (⭐⭐) / [Rust](02/rust) (⭐⭐)
-3. [PHP](03/php) (⭐⭐) / [Swift + SwiftUI macOS app](03/swift) (⭐⭐)
-4. [PHP](04/php) (⭐⭐) / [C++](04/cpp) (⭐⭐)
+2. [Rust](02/rust) (⭐⭐) - also done in [PHP](02/php)
+3. [Swift + SwiftUI](03/swift) (⭐⭐) - also done in [PHP](03/php)
+4. [C++](04/cpp) (⭐⭐) - also done in [PHP](03/php)
 5. [C#](05) (⭐⭐)
 6. [TypeScript](06) (⭐⭐)
 7. [Go](07) (⭐⭐)
