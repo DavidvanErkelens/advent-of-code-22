@@ -33,7 +33,7 @@ example_monkeys = {
     [3] = Monkey:new( {79, 60, 97}, function(item) return item * item  end, 13, 1, 3),
     [4] = Monkey:new( {74}, function(item) return item + 3  end, 17, 0, 1),
 }
-example_div_lcd = 96577
+example_div_lcm = 96577
 
 monkeys = {
     [1] = Monkey:new ({ 56, 56, 92, 65, 71, 61, 79 }, function (item) return  item * 7 end, 3, 3, 7),
@@ -45,7 +45,7 @@ monkeys = {
     [7] = Monkey:new ({ 79, 83, 64, 52, 77, 56, 63, 92 }, function (item) return  item + 6 end, 17, 2, 0),
     [8] = Monkey:new ({ 50, 97, 76, 96, 80, 56 }, function (item) return  item + 3 end, 13, 3, 5),
 }
-div_lcd = 9699690
+div_lcm = 9699690
 
 -- part 1:
 --rounds = 20
@@ -56,7 +56,7 @@ for i = 1, rounds do
         for j, item in ipairs(monkey.items) do
             valueAfterInspection = monkey.fn(item)
             --valueBeforeTest = math.floor(valueAfterInspection / 3) -- part 1
-            valueBeforeTest = valueAfterInspection % div_lcd
+            valueBeforeTest = valueAfterInspection % div_lcm
             if valueBeforeTest % monkey.divisor == 0 then
                 nextMonkey = monkey.nextIfTrue + 1 -- lua is 1-indexed :(
                 monkeys[nextMonkey].items[#monkeys[nextMonkey].items + 1] = valueBeforeTest
