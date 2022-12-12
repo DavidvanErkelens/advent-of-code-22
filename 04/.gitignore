@@ -79,7 +79,7 @@
 # *.ipr
 
 # CMake
-cmake-build-*/
+cpp/cmake-build-debug/
 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
