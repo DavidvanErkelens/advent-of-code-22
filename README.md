@@ -15,3 +15,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 10. [Haskell](10) (⭐⭐)
 11. [Lua](11) (⭐⭐)
 12. [Scala](12) (⭐⭐)
+13. [Prolog](13) (⭐⭐)
