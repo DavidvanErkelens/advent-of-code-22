@@ -17,3 +17,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 12. [Scala](12) (⭐⭐)
 13. [Prolog](13) (⭐⭐)
 14. [D](14) (⭐⭐)
+15. [Julia](15) (⭐⭐)
