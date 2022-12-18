@@ -19,3 +19,5 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 14. [D](14) (⭐⭐)
 15. [Julia](15) (⭐⭐)
 16. [Visual Basic](16) (⭐⭐)
+17. [F#](17) (⭐⭐)
+18. [CoffeeScript](18) (⭐⭐)
