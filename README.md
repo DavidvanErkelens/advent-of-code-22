@@ -21,3 +21,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 16. [Visual Basic](16) (⭐⭐)
 17. [F#](17) (⭐⭐)
 18. [CoffeeScript](18) (⭐⭐)
+19. [Groovy](19) (⭐⭐)
