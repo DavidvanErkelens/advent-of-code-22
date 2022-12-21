@@ -8,17 +8,17 @@ let fileContents = readFile("input/input.txt")
 let lines = fileContents.splitLines().filter(x => not isEmptyOrWhitespace(x))
 
 var monkeysToSolve = initTable[string, string]()
-var monkeysWithAnswer = initTable[string, int64]()
+var monkeysWithAnswer = initTable[string, float64]()
 
 for line in lines:
   let monkey = line.split(": ")
   try:
-    let parsedValue = parseBiggestInt(monkey[1])
+    let parsedValue = parseInt(monkey[1]).float
     monkeysWithAnswer[monkey[0]] = parsedValue
   except:
     monkeysToSolve[monkey[0]] = monkey[1]
 
-proc solve(toSolve: Table[string, string], withAnswer: Table[string, int64], isPartOne: bool): int64 =
+proc solve(toSolve: Table[string, string], withAnswer: Table[string, float64], isPartOne: bool): float64 =
   var monkeysToSolve = toSolve
   var monkeysWithAnswer = withAnswer
   while true:
@@ -34,7 +34,7 @@ proc solve(toSolve: Table[string, string], withAnswer: Table[string, int64], isP
         if op == "+":
           monkeysWithAnswer[name] = monkeysWithAnswer[left] + monkeysWithAnswer[right]
         if op == "/":
-          monkeysWithAnswer[name] = monkeysWithAnswer[left] div monkeysWithAnswer[right]
+          monkeysWithAnswer[name] = monkeysWithAnswer[left] / monkeysWithAnswer[right]
         if op == "*":
           monkeysWithAnswer[name] = monkeysWithAnswer[left] * monkeysWithAnswer[right]
         solved.add(name)
@@ -49,19 +49,19 @@ proc solve(toSolve: Table[string, string], withAnswer: Table[string, int64], isP
 
 # Part one
 var partOne = solve(monkeysToSolve, monkeysWithAnswer, true)
-echo "Outcome part one: " & $partOne
+echo "Outcome part one: " & $partOne.int
 
 # input is somewhere in between these two
 var lowerBound: int64 = 1
 var upperBound = 5000000000000
 
 # output of the right part of the monkey for 'root', irrespective of 'humn'
-var wanted = 5697586809113
+var wanted = float(5697586809113)
 
 while true:
   var test = lowerBound + ((upperBound - lowerBound) div 2)
 
-  monkeysWithAnswer["humn"] = test
+  monkeysWithAnswer["humn"] = test.float
 
   var output = solve(monkeysToSolve, monkeysWithAnswer, false)
 
