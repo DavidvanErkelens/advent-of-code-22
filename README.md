@@ -24,3 +24,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 | 18. | [CoffeeScript](18)    | ⭐⭐    | ❌                   |
 | 19. | [Groovy](19)          | ⭐⭐    | ❌                   |
 | 20. | [Zig](20)             | ⭐⭐    | ❌                   |
+| 21. | [Nim](21)             | ⭐⭐    | ❌                   |
