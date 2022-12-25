@@ -28,3 +28,4 @@ Repository containing implementation for the challenges of 2022's [Advent of Cod
 | 22. | [Dart](22)            | ⭐⭐    | ❌                   |
 | 23. | [Python](23)          | ⭐⭐    | ✅                   |
 | 24. | [Java](24)            | ⭐⭐    | ✅                   |
+| 25. | [PHP](25)             | ⭐⭐    | ✅                   |
